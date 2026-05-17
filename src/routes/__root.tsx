@@ -72,7 +72,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
+      { title: "Breno Araujo | Full Stack Developer" },
       { name: "description", content: "Breno Araujo — Desenvolvedor Full Stack. Portfólio interativo com projetos em JavaScript, React, Node.js e Express." },
       { name: "author", content: "Breno Araujo" },
       { property: "og:title", content: "Breno Araujo | Full Stack Developer" },
