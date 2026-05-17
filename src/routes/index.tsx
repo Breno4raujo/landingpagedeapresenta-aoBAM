@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Github, Mail, Linkedin, ExternalLink, Code2, Sparkles, Rocket, Download, MapPin } from "lucide-react";
+import { ArrowRight, Github, Mail, Linkedin, ExternalLink, Code2, Sparkles, Rocket, Download, MapPin, GraduationCap, Target, Award, Briefcase } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import projTasks from "@/assets/proj-tasks.png";
 import projStudents from "@/assets/proj-students.png";
@@ -63,6 +63,7 @@ function Index() {
             <a href="#sobre" className="hover:text-foreground transition-colors">Sobre</a>
             <a href="#skills" className="hover:text-foreground transition-colors">Skills</a>
             <a href="#projetos" className="hover:text-foreground transition-colors">Projetos</a>
+            <a href="#curriculo" className="hover:text-foreground transition-colors">Currículo</a>
             <a href="#contato" className="hover:text-foreground transition-colors">Contato</a>
           </div>
           <a
@@ -112,6 +113,13 @@ function Index() {
                   className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition"
                 >
                   Ver projetos <ArrowRight className="h-4 w-4" />
+                </a>
+                <a
+                  href="/Breno_Araujo_Curriculo.pdf"
+                  download
+                  className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-6 py-3 text-sm font-semibold hover:bg-card transition"
+                >
+                  <Download className="h-4 w-4" /> Baixar CV
                 </a>
                 <a
                   href="#contato"
@@ -264,6 +272,116 @@ console.log(breno.hire());`}
         </div>
       </section>
 
+      {/* CURRÍCULO */}
+      <section id="curriculo" className="py-24 relative">
+        <div className="absolute inset-0 -z-10 bg-gradient-radial opacity-40" />
+        <div className="mx-auto max-w-6xl px-6">
+          <SectionLabel>Currículo</SectionLabel>
+          <div className="flex flex-wrap items-end justify-between gap-4 mt-3">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight max-w-2xl" style={{ fontFamily: "Space Grotesk, sans-serif" }}>
+              Formação e <span className="text-gradient">objetivos</span>
+            </h2>
+            <a
+              href="/Breno_Araujo_Curriculo.pdf"
+              download
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition"
+            >
+              <Download className="h-4 w-4" /> Baixar CV em PDF
+            </a>
+          </div>
+
+          <div className="mt-12 grid md:grid-cols-2 gap-6">
+            <div className="glass rounded-2xl p-6 md:p-8">
+              <div className="flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-primary text-primary-foreground shadow-glow">
+                  <Target className="h-5 w-5" />
+                </span>
+                <h3 className="text-xl font-bold" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Objetivo profissional</h3>
+              </div>
+              <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                Atuar na área de tecnologia em busca da minha primeira oportunidade profissional para adquirir experiência prática, contribuir com soluções eficientes e evoluir continuamente como desenvolvedor. Tenho interesse em desenvolvimento de software, back-end, front-end e soluções tecnológicas em geral.
+              </p>
+            </div>
+
+            <div className="glass rounded-2xl p-6 md:p-8">
+              <div className="flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-primary text-primary-foreground shadow-glow">
+                  <Sparkles className="h-5 w-5" />
+                </span>
+                <h3 className="text-xl font-bold" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Resumo profissional</h3>
+              </div>
+              <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                Graduado em Análise e Desenvolvimento de Sistemas, com formação em andamento em Desenvolvimento Full Stack. Conhecimento prático em aplicações web e APIs com foco em JavaScript, Node.js e boas práticas. Facilidade de aprendizado, trabalho em equipe e vivência profissional que exige organização, responsabilidade e resolução de problemas.
+              </p>
+            </div>
+
+            <div className="glass rounded-2xl p-6 md:p-8 md:col-span-2">
+              <div className="flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-primary text-primary-foreground shadow-glow">
+                  <GraduationCap className="h-5 w-5" />
+                </span>
+                <h3 className="text-xl font-bold" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Formação acadêmica</h3>
+              </div>
+              <div className="mt-6 grid md:grid-cols-2 gap-6">
+                <div className="relative pl-5 border-l-2 border-primary/40">
+                  <span className="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full bg-gradient-primary shadow-glow" />
+                  <p className="text-xs uppercase tracking-wider text-primary font-semibold">Concluído · 2024</p>
+                  <h4 className="mt-1 font-bold">Análise e Desenvolvimento de Sistemas</h4>
+                  <p className="text-sm text-muted-foreground mt-1">Universidade Cruzeiro do Sul</p>
+                </div>
+                <div className="relative pl-5 border-l-2 border-primary/40">
+                  <span className="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full bg-gradient-primary shadow-glow animate-pulse" />
+                  <p className="text-xs uppercase tracking-wider text-primary font-semibold">Em andamento · Previsão 2027</p>
+                  <h4 className="mt-1 font-bold">Formação Full Stack</h4>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    Programadores do Amanhã — JavaScript, Node.js, Express, React, Sequelize, MySQL, APIs REST e soft skills.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="glass rounded-2xl p-6 md:p-8">
+              <div className="flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-primary text-primary-foreground shadow-glow">
+                  <Award className="h-5 w-5" />
+                </span>
+                <h3 className="text-xl font-bold" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Cursos & certificações</h3>
+              </div>
+              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                <li>• Node.js — API REST com Express, MongoDB e Sequelize</li>
+                <li>• JavaScript — POO, DOM, funções e bibliotecas com Node</li>
+                <li>• React — desenvolvimento com JavaScript</li>
+                <li>• HTML & CSS — Flexbox, responsividade e mobile-first</li>
+                <li>• Swagger, Git/GitHub, HTTP, Python (introdução)</li>
+              </ul>
+            </div>
+
+            <div className="glass rounded-2xl p-6 md:p-8">
+              <div className="flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-primary text-primary-foreground shadow-glow">
+                  <Briefcase className="h-5 w-5" />
+                </span>
+                <h3 className="text-xl font-bold" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Experiência profissional</h3>
+              </div>
+              <ul className="mt-4 space-y-3 text-sm">
+                <li>
+                  <p className="font-semibold">Auxiliar de Logística — Comercial Milano Brasil</p>
+                  <p className="text-muted-foreground text-xs">12/2024 – 03/2025</p>
+                </li>
+                <li>
+                  <p className="font-semibold">Auxiliar Administrativo (Jovem Aprendiz) — Concessionária Rodoviária JF–Rio</p>
+                  <p className="text-muted-foreground text-xs">07/2023 – 10/2024</p>
+                </li>
+                <li>
+                  <p className="font-semibold">Meio Oficial de Marceneiro — Integrato Indústria</p>
+                  <p className="text-muted-foreground text-xs">02/2021 – 01/2023</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CONTATO */}
       <section id="contato" className="py-24 relative">
         <div className="mx-auto max-w-4xl px-6">
@@ -278,7 +396,7 @@ console.log(breno.hire());`}
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <a
-                href="mailto:breno4raujo@gmail.com"
+                href="mailto:devbrenoaraujo@gmail.com"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition"
               >
                 <Mail className="h-4 w-4" /> Enviar e-mail
@@ -292,7 +410,7 @@ console.log(breno.hire());`}
                 <Github className="h-4 w-4" /> GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/breno-araujo/"
+                href="https://www.linkedin.com/in/brenoaraujodev/"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-6 py-3 text-sm font-semibold hover:bg-card transition"
