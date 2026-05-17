@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Github, Mail, Linkedin, ExternalLink, Code2, Sparkles, Rocket, Download, MapPin } from "lucide-react";
+import { ArrowRight, Github, Mail, Linkedin, ExternalLink, Code2, Sparkles, Rocket, Download, MapPin, GraduationCap, Target, Award, Briefcase } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import projTasks from "@/assets/proj-tasks.png";
 import projStudents from "@/assets/proj-students.png";
@@ -63,6 +63,7 @@ function Index() {
             <a href="#sobre" className="hover:text-foreground transition-colors">Sobre</a>
             <a href="#skills" className="hover:text-foreground transition-colors">Skills</a>
             <a href="#projetos" className="hover:text-foreground transition-colors">Projetos</a>
+            <a href="#curriculo" className="hover:text-foreground transition-colors">Currículo</a>
             <a href="#contato" className="hover:text-foreground transition-colors">Contato</a>
           </div>
           <a
@@ -112,6 +113,13 @@ function Index() {
                   className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition"
                 >
                   Ver projetos <ArrowRight className="h-4 w-4" />
+                </a>
+                <a
+                  href="/Breno_Araujo_Curriculo.pdf"
+                  download
+                  className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-6 py-3 text-sm font-semibold hover:bg-card transition"
+                >
+                  <Download className="h-4 w-4" /> Baixar CV
                 </a>
                 <a
                   href="#contato"
