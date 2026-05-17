@@ -396,7 +396,7 @@ console.log(breno.hire());`}
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <a
-                href="mailto:breno4raujo@gmail.com"
+                href="mailto:devbrenoaraujo@gmail.com"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition"
               >
                 <Mail className="h-4 w-4" /> Enviar e-mail
@@ -410,7 +410,7 @@ console.log(breno.hire());`}
                 <Github className="h-4 w-4" /> GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/breno-araujo/"
+                href="https://www.linkedin.com/in/brenoaraujodev/"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-6 py-3 text-sm font-semibold hover:bg-card transition"
